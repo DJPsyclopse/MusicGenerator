@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="switcherexample.BController">
+   <children>
+      <VBox alignment="CENTER" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="B">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Wait until the music stops before hitting a button.">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter filname to load and play song.">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="bText" maxWidth="150.0" minWidth="150.0" onAction="#handleText" prefWidth="150.0" />
+            <Button mnemonicParsing="false" onAction="#handleGoToA" text="Go to A" />
+            <Button layoutX="278.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleGoToC" text="Go to C" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter file name with .mid to save song.">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="loadField" maxWidth="200.0" onAction="#handleLoad" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
